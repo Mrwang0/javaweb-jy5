@@ -1,5 +1,7 @@
 package com.itdr.common;
 
+import javax.servlet.http.HttpServletRequest;
+
 public class ResponseCode<T> {
     private Integer status;
     private T data;
@@ -41,4 +43,6 @@ public class ResponseCode<T> {
                 ", mag='" + mag + '\'' +
                 '}';
     }
+
+
 }

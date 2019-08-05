@@ -99,9 +99,18 @@ public class UserService {
             rs.setMag(Const.USER_UPDATE_MSG);
         }
 
+       /* //启用用户
+        int row1 = ud.OpenByUid(uid);
+        if (row1 <= 0){
+            rs.setStatus(Const.USER_UPDATE_CODE);
+            rs.setMag(Const.USER_UPDATE_MSG);
+        }*/
+
         rs.setStatus(0);
         rs.setData(row);
 
         return rs;
     }
+
+
 }

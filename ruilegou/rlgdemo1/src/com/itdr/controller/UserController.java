@@ -42,6 +42,9 @@ public class UserController extends HttpServlet {
             case "disableuser":
                 rs = disableuserDo(request);
                 break;
+           /* case "ableuser":
+                rs = ableuserDo(request);
+                break;*/
         }
 
         /*//创建统一返回对象
@@ -105,4 +108,15 @@ public class UserController extends HttpServlet {
         //调用业务层处理业务
         return rs;
     }
+
+   /* //获取用户启用的请求
+    private ResponseCode ableuserDo(HttpServletRequest request){
+        //获取参数
+        String uid = request.getParameter("uid");
+
+        ResponseCode rs = uc.selectOne(uid);
+
+        //调用业务层处理业务
+        return rs;
+    }*/
 }

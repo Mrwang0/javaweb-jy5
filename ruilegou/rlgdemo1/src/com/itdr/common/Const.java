@@ -18,4 +18,10 @@ public class Const {
 
     public static final Integer USER_UPDATE_CODE = 105;
     public static final String USER_UPDATE_MSG = "更新失败";
+
+    public static final Integer USER_LOGIN_CODE = 106;
+    public static final String USER_LOGIN_MSG = "请登录后再操作！";
+
+    public static final Integer USER_SELECT_CODE = 107;
+    public static final String USER_SELECT_MSG = "没有操作权限！";
 }
